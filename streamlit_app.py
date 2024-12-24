@@ -4,7 +4,7 @@ from openai import OpenAI
 # Show title and description.
 st.title("💬 Chatbot")
 st.write(
-    "tôi là Nhuần zzz"
+    "Tôi là Nhuần Đến từ PYAN"
 )
 
 # Ask user for their OpenAI API key via `st.text_input`.
