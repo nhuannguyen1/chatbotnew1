@@ -7,14 +7,11 @@ from openai import OpenAI
 st.markdown(
     """
     <div style="text-align: center; margin-bottom: 20px;">
-        <img src="logo.png" alt="Logo" style="width: 150px;">
+        <img src="https://github.com/nhuannguyen1/chatbotnew1/blob/6b935e450254ab561ecdc2a715aaa016f293e0d3/logo.png" alt="Logo" style="width: 150px;">
     </div>
     """,
     unsafe_allow_html=True
 )
-
-
-
 
 
 # Show title and description.
