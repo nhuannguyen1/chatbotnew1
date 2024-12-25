@@ -4,7 +4,7 @@ from openai import OpenAI
 # Show title and description.
 st.title("Trợ lý tư vấn Pyan")
 
-st.write("Tôi là Nhuần Đến từ PYAN mot 1234569999999")
+st.write("Tôi là Nhuần Đến từ PYAN")
 
 # Ask user for their OpenAI API key via `st.text_input`.
 # Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
