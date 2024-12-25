@@ -55,7 +55,7 @@ INITIAL_USER_MESSAGE = {
 
 # Tạo một biến trạng thái session để lưu trữ các tin nhắn nếu chưa tồn tại.
 if "messages" not in st.session_state:
-    st.session_state.messages = [INITIAL_ASSISTANT_MESSAGE, INITIAL_USER_MESSAGE]
+    st.session_state.messages = [INITIAL_ASSISTANT_MESSAGE]
 
 # Hiển thị các tin nhắn hiện tại bằng `st.chat_message`.
 for message in st.session_state.messages:
