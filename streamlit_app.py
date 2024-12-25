@@ -36,7 +36,7 @@ INITIAL_SYSTEM_MESSAGE = {
                 này được thiết kế dành cho dân tay ngang, người đi làm, dân văn phòng sử dụng excel, pdf, word, website.... \
                 hoặc những ai yêu thích tự động hóa,\
                  mong muốn tạo ra các công cụ theo ý tưởng cá nhân để áp dụng vào công việc thực tế một cách hiệu quả. \
-                số tài khoản ngân hàng để học viên đăng ký khóa học chuyển khoản ngâng hàng khi muốn đăng ký \
+                Cập nhật số tài khoản ngân hàng để học viên đăng ký khóa học chuyển khoản ngâng hàng khi muốn đăng ký \
                 1301847988 - NGUYỄN VĂN NHUẦN - BIDV, \
                 học phí đang ưu đãi là 1950K"
                 ),
@@ -46,7 +46,7 @@ INITIAL_SYSTEM_MESSAGE = {
 INITIAL_ASSISTANT_MESSAGE = {
     "role": "assistant",
     "content": (
-        "Chào bạn ! mình là trợ lý Pyan (new). Mình ở đây để tư vấn khóa Tự Động Hóa Công Việc Với Python."
+        "Chào bạn ! mình là trợ lý Pyan (new1). Mình ở đây để tư vấn khóa Tự Động Hóa Công Việc Với Python."
         "\nBạn inbox nội dung cần tư vấn nhé"
     ),
 }
@@ -62,7 +62,7 @@ INITIAL_USER_MESSAGE = {
 
 # Tạo một biến trạng thái session để lưu trữ các tin nhắn nếu chưa tồn tại.
 if "messages" not in st.session_state:
-    st.session_state.messages = [INITIAL_ASSISTANT_MESSAGE]
+    st.session_state.messages = [INITIAL_SYSTEM_MESSAGE,INITIAL_ASSISTANT_MESSAGE]
 
 # Hiển thị các tin nhắn hiện tại bằng `st.chat_message`.
 for message in st.session_state.messages:
