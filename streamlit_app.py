@@ -14,7 +14,7 @@ st.markdown(
 # Căn chỉnh tiêu đề vào giữa
 st.markdown(
     """
-    <h1 style="text-align: center;">Xin Chào, Tôi Là Trợ Lý Tư Vấn Pyan</h1>
+    <h1 style="text-align: center;">Xin Chào, Mình Là Trợ Lý Pyan</h1>
     """,
     unsafe_allow_html=True
 )
