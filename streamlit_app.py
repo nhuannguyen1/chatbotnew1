@@ -35,8 +35,9 @@ INITIAL_SYSTEM_MESSAGE = {
                  với phương pháp học tập độc đáo: thực hành trước, lý thuyết sau - vướng đâu, gỡ đó.  khóa học \
                 này được thiết kế dành cho dân tay ngang, người đi làm, dân văn phòng sử dụng excel, pdf, word, website.... \
                 hoặc những ai yêu thích tự động hóa,\
-                 mong muốn tạo ra các công cụ theo ý tưởng cá nhân để áp dụng vào công việc thực tế một cách hiệu quả."
-                "số tài khoản ngân hàng để học viên đăng ký khóa học chuyển khoản ngâng hàng khi muốn đăng ký 1301847988 - NGUYỄN VĂN NHUẦN - BIDV, \
+                 mong muốn tạo ra các công cụ theo ý tưởng cá nhân để áp dụng vào công việc thực tế một cách hiệu quả. \
+                số tài khoản ngân hàng để học viên đăng ký khóa học chuyển khoản ngâng hàng khi muốn đăng ký \
+                1301847988 - NGUYỄN VĂN NHUẦN - BIDV, \
                 học phí đang ưu đãi là 1950K"
                 ),
 }
@@ -45,7 +46,7 @@ INITIAL_SYSTEM_MESSAGE = {
 INITIAL_ASSISTANT_MESSAGE = {
     "role": "assistant",
     "content": (
-        "Chào bạn ! mình là trợ lý Pyan. Mình ở đây để tư vấn khóa Tự Động Hóa Công Việc Với Python."
+        "Chào bạn ! mình là trợ lý Pyan (new). Mình ở đây để tư vấn khóa Tự Động Hóa Công Việc Với Python."
         "\nBạn inbox nội dung cần tư vấn nhé"
     ),
 }
