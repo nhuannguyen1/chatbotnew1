@@ -1,6 +1,22 @@
 import streamlit as st
 from openai import OpenAI
 
+
+
+# Thêm logo ở trên cùng, căn giữa.
+st.markdown(
+    """
+    <div style="text-align: center; margin-bottom: 20px;">
+        <img src="logo.png" alt="Logo" style="width: 150px;">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+
+
 # Show title and description.
 st.title("Trợ lý tư vấn Pyan")
 
