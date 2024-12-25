@@ -62,7 +62,7 @@ for message in st.session_state.messages:
             st.markdown(message["content"])
 
 # Tạo ô nhập liệu cho người dùng.
-if prompt := st.chat_input("Anh em nhập câu hỏi vào đây ?"):
+if prompt := st.chat_input("Bạn nhập nội dung cần trao đổi ở đây nhé?"):
 
     # Lưu trữ và hiển thị tin nhắn của người dùng.
     st.session_state.messages.append({"role": "user", "content": prompt})
