@@ -7,17 +7,37 @@ from openai import OpenAI
 st.markdown(
     """
     <div style="text-align: center; margin-bottom: 20px;">
-        <img src="https://raw.githubusercontent.com/nhuannguyen1/chatbotnew1/refs/heads/main/logo.png" alt="Logo" style="width: 150px;">
+        <img src="https://raw.githubusercontent.com/nhuannguyen1/chatbotnew1/refs/heads/main/logo.png" alt="Logo" style="width: 50px;">
     </div>
     """,
     unsafe_allow_html=True
 )
 
+# # Show title and description.
+# st.title("Trợ lý tư vấn Pyan")
 
-# Show title and description.
-st.title("Trợ lý tư vấn Pyan")
+# st.write("Tôi là Nhuần Đến từ PYAN")
 
-st.write("Tôi là Nhuần Đến từ PYAN")
+# Căn chỉnh tiêu đề vào giữa
+st.markdown(
+    """
+    <h1 style="text-align: center;">Trợ lý tư vấn Pyan</h1>
+    """,
+    unsafe_allow_html=True
+)
+
+# Thêm mô tả bên dưới tiêu đề, cũng căn giữa
+st.markdown(
+    """
+    <p style="text-align: center;">Tôi là Nhuần, đến từ PYAN</p>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+
+
 
 # Ask user for their OpenAI API key via `st.text_input`.
 # Ask user for their OpenAI API key via `st.text_input`.
