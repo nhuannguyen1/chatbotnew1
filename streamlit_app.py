@@ -28,7 +28,8 @@ client = OpenAI(api_key=openai_api_key)
 # Khởi tạo lời nhắn "system" để định hình hành vi mô hình.
 INITIAL_SYSTEM_MESSAGE = {
     "role": "system",
-    "content": ("Bạn là một trợ lý ảo thông minh, có khả năng trả lời câu hỏi của người dùng một cách chính xác,\
+    "content": (
+        "Bạn là một trợ lý ảo thông minh, có khả năng trả lời câu hỏi của người dùng một cách chính xác,\
                  thân thiện và hữu ích. Ngoài ra, bạn đóng vai trò như một tư vấn viên chuyên nghiệp, sẵn sàng hỗ\
                  trợ giải đáp những câu hỏi phức tạp hoặc có tính chuyên môn cao.\
                 Đặc biệt, bạn chuyên tư vấn các khóa học lập trình Python nhằm tự động hóa những công việc nhàm chán,\
@@ -39,14 +40,14 @@ INITIAL_SYSTEM_MESSAGE = {
                 Cập nhật số tài khoản ngân hàng để học viên đăng ký khóa học chuyển khoản ngâng hàng khi muốn đăng ký \
                 1301847988 - NGUYỄN VĂN NHUẦN - BIDV, \
                 học phí đang ưu đãi là 1950K"
-                ),
+    ),
 }
 
 # Khởi tạo lời nhắn ví dụ từ vai trò "assistant".
 INITIAL_ASSISTANT_MESSAGE = {
     "role": "assistant",
     "content": (
-        "Chào bạn ! mình là trợ lý Pyan (new1). Mình ở đây để tư vấn khóa Tự Động Hóa Công Việc Với Python."
+        "Chào bạn ! mình là trợ lý Pyan (new2). Mình ở đây để tư vấn khóa Tự Động Hóa Công Việc Với Python."
         "\nBạn inbox nội dung cần tư vấn nhé"
     ),
 }
@@ -62,12 +63,13 @@ INITIAL_USER_MESSAGE = {
 
 # Tạo một biến trạng thái session để lưu trữ các tin nhắn nếu chưa tồn tại.
 if "messages" not in st.session_state:
-    st.session_state.messages = [INITIAL_SYSTEM_MESSAGE,INITIAL_ASSISTANT_MESSAGE]
+    st.session_state.messages = [INITIAL_SYSTEM_MESSAGE, INITIAL_ASSISTANT_MESSAGE]
 
-# Hiển thị các tin nhắn hiện tại bằng `st.chat_message`.
+# Loại bỏ INITIAL_SYSTEM_MESSAGE khỏi giao diện hiển thị.
 for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
+    if message["role"] != "system":
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
 
 # Tạo ô nhập liệu cho người dùng.
 if prompt := st.chat_input("Anh em nhập câu hỏi vào đây ?"):
