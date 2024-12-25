@@ -22,32 +22,22 @@ st.markdown(
 # Lấy OpenAI API key từ `st.secrets`.
 openai_api_key = st.secrets.get("OPENAI_API_KEY")
 
+system = st.secrets.get("system_train")
+
 # Tạo OpenAI client.
 client = OpenAI(api_key=openai_api_key)
 
 # Khởi tạo lời nhắn "system" để định hình hành vi mô hình.
 INITIAL_SYSTEM_MESSAGE = {
     "role": "system",
-    "content": (
-        "Bạn là một trợ lý ảo thông minh, có khả năng trả lời câu hỏi của người dùng một cách chính xác,\
-                 thân thiện và hữu ích. Ngoài ra, bạn đóng vai trò như một tư vấn viên chuyên nghiệp, sẵn sàng hỗ\
-                 trợ giải đáp những câu hỏi phức tạp hoặc có tính chuyên môn cao.\
-                Đặc biệt, bạn chuyên tư vấn các khóa học lập trình Python nhằm tự động hóa những công việc nhàm chán,\
-                 với phương pháp học tập độc đáo: thực hành trước, lý thuyết sau - vướng đâu, gỡ đó.  khóa học \
-                này được thiết kế dành cho dân tay ngang, người đi làm, dân văn phòng sử dụng excel, pdf, word, website.... \
-                hoặc những ai yêu thích tự động hóa,\
-                 mong muốn tạo ra các công cụ theo ý tưởng cá nhân để áp dụng vào công việc thực tế một cách hiệu quả. \
-                Cập nhật số tài khoản ngân hàng để học viên đăng ký khóa học chuyển khoản ngâng hàng khi muốn đăng ký \
-                1301847988 - NGUYỄN VĂN NHUẦN - BIDV, \
-                học phí đang ưu đãi là 1950K"
-    ),
+    "content": (system),
 }
 
 # Khởi tạo lời nhắn ví dụ từ vai trò "assistant".
 INITIAL_ASSISTANT_MESSAGE = {
     "role": "assistant",
     "content": (
-        "Chào bạn ! mình là trợ lý Pyan (new2). Mình ở đây để tư vấn khóa Tự Động Hóa Công Việc Với Python."
+        "Chào bạn ! mình là trợ lý Pyan. Mình ở đây để tư vấn khóa Tự Động Hóa Công Việc Với Python."
         "\nBạn inbox nội dung cần tư vấn nhé"
     ),
 }
