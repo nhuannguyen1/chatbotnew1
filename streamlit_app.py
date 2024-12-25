@@ -43,8 +43,8 @@ INITIAL_SYSTEM_MESSAGE = {
 INITIAL_ASSISTANT_MESSAGE = {
     "role": "assistant",
     "content": (
-        "Chào bạn! Tôi là trợ lý Pyan. Tôi ở đây để giúp bạn với mọi thắc mắc hoặc yêu cầu của bạn. "
-        "Hãy cho tôi biết bạn cần hỗ trợ gì nhé!"
+        "Chào bạn! mình là trợ lý Pyan. Mình ở đây để Tư Vấn Khóa Tự Động Hóa Công Việc Nhàm Chán Với Python"
+        "Bạn inbox nội dung cần tư vấn nhé"
     ),
 }
 
