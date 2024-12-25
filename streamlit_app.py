@@ -21,22 +21,10 @@ st.markdown(
 # Căn chỉnh tiêu đề vào giữa
 st.markdown(
     """
-    <h1 style="text-align: center;">Trợ lý tư vấn Pyan</h1>
+    <h1 style="text-align: center;">Xin Chào, Tôi Là Trợ Lý Tư Vấn Pyan</h1>
     """,
     unsafe_allow_html=True
 )
-
-# Thêm mô tả bên dưới tiêu đề, cũng căn giữa
-st.markdown(
-    """
-    <p style="text-align: center;">Tôi là Nhuần, đến từ PYAN</p>
-    """,
-    unsafe_allow_html=True
-)
-
-
-
-
 
 
 # Ask user for their OpenAI API key via `st.text_input`.
