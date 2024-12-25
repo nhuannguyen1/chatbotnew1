@@ -30,7 +30,7 @@ for message in st.session_state.messages:
 
 # Create a chat input field to allow the user to enter a message. This will display
 # automatically at the bottom of the page.
-if prompt := st.chat_input("What is up?"):
+if prompt := st.chat_input("Anh em nhập câu hỏi vào đây ?"):
 
     # Store and display the current prompt.
     st.session_state.messages.append({"role": "user", "content": prompt})
