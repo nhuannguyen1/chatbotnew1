@@ -3,13 +3,13 @@ import openai
 
 # Show title and description.
 st.title("Trợ lý tư vấn Pyan")
-st.write("Tôi là Nhuần, đến từ PYAN.")
+st.write("Tôi là Nhuần, đến từ PYAN")
 
 # Lấy OpenAI API key từ `st.secrets`.
 openai_api_key = st.secrets.get("OPENAI_API_KEY")
 
 if not openai_api_key:
-    st.error("API Key không tồn tại trong `st.secrets`. Vui lòng cấu hình `secrets.toml`.")
+    st.error("API Key không tồn tại vui lòng xem lại")
 else:
     # Set the OpenAI API key.
     openai.api_key = openai_api_key
