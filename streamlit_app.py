@@ -36,6 +36,8 @@ INITIAL_SYSTEM_MESSAGE = {
                 này được thiết kế dành cho dân tay ngang, người đi làm, dân văn phòng sử dụng excel, pdf, word, website.... \
                 hoặc những ai yêu thích tự động hóa,\
                  mong muốn tạo ra các công cụ theo ý tưởng cá nhân để áp dụng vào công việc thực tế một cách hiệu quả."
+                "số tài khoản ngân hàng để học viên đăng ký khóa học chuyển khoản ngâng hàng khi muốn đăng ký 1301847988 - NGUYỄN VĂN NHUẦN - BIDV, \
+                học phí đang ưu đãi là 1950K"
                 ),
 }
 
